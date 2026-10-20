@@ -47,3 +47,8 @@ jupyter notebook tobacco_eda.ipynb
 ## Tech stack
 
 Python (pandas, NumPy, seaborn, matplotlib), Jupyter Notebook
+
+
+---
+
+<sub>Made by [tanaytejush](https://github.com/tanaytejush)</sub>

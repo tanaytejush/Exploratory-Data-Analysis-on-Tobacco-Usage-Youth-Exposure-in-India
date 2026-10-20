@@ -1,50 +1,49 @@
-# Exploratory-Data-Analysis-on-Tobacco-Usage-Youth-Exposure-in-India
-An in depth exploratory analysis of tobacco usage patterns, youth marketing exposure, and policy enforcement across Indian states. This project highlights public health risks and uncovers actionable insights to support targeted anti-tobacco interventions.          
+# EDA on Tobacco Usage and Youth Exposure in India
 
-Project Description:
-This project presents an in-depth Exploratory Data Analysis (EDA) of tobacco usage patterns, youth exposure to tobacco marketing, and policy enforcement gaps across Indian States and Union Territories.
-The dataset is sourced from nationwide health and education surveys, focusing on current and lifetime tobacco usage, age of initiation, marketing exposure, and COTPA (Cigarettes and Other Tobacco Products Act) compliance in schools.
+An in-depth exploratory analysis of **tobacco usage patterns, youth exposure to tobacco marketing, and policy enforcement gaps** across Indian states and union territories. It highlights public health risks and points to where targeted anti-tobacco action would help most.
 
-Key Objectives:
-Analyze regional differences in tobacco usage patterns (cigarettes, bidi, smokeless tobacco).
+## About the data
 
-Assess the impact of youth exposure to tobacco marketing on usage trends.
+The data comes from nationwide health and education surveys. It covers current and lifetime tobacco use, age of initiation, exposure to marketing, and compliance with **COTPA** (the Cigarettes and Other Tobacco Products Act) in schools.
 
-Identify gaps in policy enforcement and school-level anti-tobacco measures.
+## Objectives
 
-Detect outlier regions for focused policy interventions.
+- Compare tobacco use across regions (cigarettes, bidi, smokeless tobacco)
+- Assess how exposure to tobacco marketing relates to youth usage
+- Find gaps in policy enforcement and school-level anti-tobacco measures
+- Detect outlier regions that need focused intervention
 
-Key Findings:
-1. Regional Tobacco Usage Patterns:
-High-risk states such as Bihar, Mizoram, Nagaland, and Tripura show significantly higher tobacco usage rates than the national average.
+## Key findings
 
-Rural areas reported greater tobacco use, especially for smokeless tobacco and bidi consumption.
+1. **Regional patterns**: Bihar, Mizoram, Nagaland and Tripura show significantly higher usage than the national average. Rural areas report more tobacco use, especially smokeless tobacco and bidi.
+2. **Youth exposure**: many students are still exposed to tobacco advertising despite legal restrictions, which points to COTPA enforcement lapses. Fewer than 40% of students in many regions noticed preventive messages.
+3. **Age of initiation**: in some states children start as early as 12 to 13 years old.
+4. **Policy enforcement**: 81% of schools know the tobacco-free guidelines, but only about 37% are authorised to collect fines.
+5. **Outliers**: boxplot analysis identified states that are statistical outliers for current tobacco use, on both the high and low ends. These are candidates for targeted public health programmes.
 
-2. Youth Exposure & Perception Gaps:
-A substantial number of students are still exposed to tobacco advertisements despite legal restrictions, indicating COTPA enforcement lapses.
+## Methods
 
-Anti-tobacco campaign reach is low, with less than 40% of students noticing preventive messages in many regions.
+- Data cleaning and preprocessing
+- Univariate and bivariate analysis
+- Correlation heatmaps
+- Outlier detection with boxplots
+- Urban versus rural comparisons
 
-3. Age of Initiation:
-In some states, children start using tobacco as early as 12–13 years, posing severe long-term health risks.
+## Files
 
-4. Policy Compliance & Enforcement Issues:
-Although 81% of schools are aware of tobacco-free guidelines, only ~37% are authorized to collect fines, highlighting enforcement challenges.
+| File | Description |
+|------|-------------|
+| `tobacco_eda.ipynb` | Analysis notebook |
+| `datafile.csv` | Original survey data |
+| `cleaned_tobacco_data.csv` | Cleaned dataset used in the notebook |
 
-5. Outlier Detection:
-The boxplot analysis identified states that are statistical outliers for current tobacco usage, both on the high and low ends.
+## Run it
 
-These outliers present opportunities for targeted public health interventions.
+```bash
+pip install pandas numpy seaborn matplotlib jupyter
+jupyter notebook tobacco_eda.ipynb
+```
 
-Tools & Techniques:
-Python (Pandas, NumPy, Seaborn, Matplotlib)
+## Tech stack
 
-Data Cleaning & Preprocessing
-
-Univariate & Bivariate Analysis
-
-Correlation Heatmaps
-
-Outlier Detection (Boxplots)
-
-Visualization of Urban vs Rural trends
+Python (pandas, NumPy, seaborn, matplotlib), Jupyter Notebook
